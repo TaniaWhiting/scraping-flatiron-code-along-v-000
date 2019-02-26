@@ -19,7 +19,7 @@ class Scraper
     #end 
     
     def get_courses
-      self.get_page.css("#row0_0").inner_text
+      self.get_page.css("#row0_0").inner_text.gsub("A", "")
       binding.pry
     end 
     
